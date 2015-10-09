@@ -7,3 +7,4 @@
 - Navigate to local directory in the terminal
   * npm install
   * npm start
+  * navigate to localhost:3000 in the browser
