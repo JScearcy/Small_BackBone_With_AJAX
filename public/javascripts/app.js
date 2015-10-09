@@ -13,14 +13,15 @@ var currentBook = new Book;
 
 //create a template and render function for a simple view on the book
 var BookView = Backbone.View.extend({
+  //assign the jquery selector to the view
+  $targetElem: $('#currentBook'),
   //simple template for the currentBook
   template: _.template("Author: <%= author %>, \
                        Title: <%= title %>,  \
                        Year Published: <%= pub_year %> "),
   //render the currentBook
   render: function(){
-    var $targetElem = $('#currentBook');
-    $targetElem.html(this.template({author: currentBook.attributes.author,
+    this.$targetElem.html(this.template({author: currentBook.attributes.author,
                                     title: currentBook.attributes.title,
                                     pub_year: currentBook.attributes.pub_year}));
     return this;
