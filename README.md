@@ -5,5 +5,5 @@
 #Install
 - Clone repo
 - Navigate to local directory in the terminal
-  * npm Install
+  * npm install
   * npm start
